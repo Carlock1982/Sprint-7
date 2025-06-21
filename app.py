@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Encabezado
 st.header("Panel de Control - Análisis de Vehículos")
 
 # Cargar los datos
@@ -17,3 +16,4 @@ if st.button("Construir histograma de odómetro"):
 if st.button("Construir gráfico de dispersión"):
     fig_disp = px.scatter(data, x="odometer", y="price")
     st.plotly_chart(fig_disp, use_container_width=True)
+
